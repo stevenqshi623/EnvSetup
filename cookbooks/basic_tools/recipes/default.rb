@@ -45,3 +45,14 @@ package "liblapack-dev"
 # install gd
 package "libgd2-xpm-dev"
 
+# prepare directories
+directory '/usr/local/src' do
+    action :create
+    recursive true
+end
+
+directory '/usr/local/pkg' do
+    action :create
+    recursive true
+end
+

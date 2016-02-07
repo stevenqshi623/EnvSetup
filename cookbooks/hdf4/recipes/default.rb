@@ -3,17 +3,7 @@ package "libpng12-dev"
 package "libjpeg-dev"
 package "zlib1g-dev"
 
-# prepare directories
-directory '/usr/local/src' do
-    action :create
-    recursive true
-end
-
-directory '/usr/local/pkg' do
-    action :create
-    recursive true
-end
-
+# delete directory hdf4s
 directory '/usr/local/pkg/hdf4' do
     action :delete
     recursive true
